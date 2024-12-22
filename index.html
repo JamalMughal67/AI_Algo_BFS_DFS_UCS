@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Graph Visualization</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Interactive Graph Visualization</h1>
+  </header>
+  <main>
+    <div id="graph-container">
+      <canvas id="graphCanvas" width="800" height="600"></canvas>
+    </div>
+    <div id="controls">
+      <form id="addEdgeForm">
+        <input type="text" id="fromNode" placeholder="From Node" required>
+        <input type="text" id="toNode" placeholder="To Node" required>
+        <input type="number" id="cost" min="1" placeholder="Cost" required>
+        <button type="submit">Add Edge</button>
+      </form>
+      <div class="algorithms">
+        <button id="startButton">Start BFS</button>
+        <button id="startDFSButton">Start DFS</button>
+        <button id="startUCSButton">Start UCS</button>
+      </div>
+      <button id="resetButton">Reset</button>
+    </div>
+  </main>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
